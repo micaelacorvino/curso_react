@@ -1,0 +1,57 @@
+
+.CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea las tarjetas desde la izquierda */
+    align-items: flex-start; /* Alinea las tarjetas desde arriba */
+    min-height: 50vh; /* Altura mínima de la ventana */
+    width: 100%; /* Asegura que el contenedor principal ocupe todo el ancho disponible */
+  }
+  
+  .CardItem {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #000; /* Texto en negro */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 16px;
+    margin: 16px;
+    flex: 0 0 calc(33.33% - 32px); /* Calcula el ancho para tres tarjetas por fila */
+    max-width: 300px; /* Establece el ancho máximo para cada tarjeta */
+    box-sizing: border-box; 
+    width: 100%;
+  }
+  
+  .Header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 8px;
+  }
+  
+  .ItemHeader {
+    margin: 0;
+  }
+  
+  .ItemImg {
+    max-width: 100%;
+  }
+  
+  .Info {
+    color: #444; 
+    margin: 8px 0;
+  }
+  
+  .ItemFooter {
+    text-align: right;
+  }
+  
+  .Option {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Option:hover {
+    background-color: #555;
+  }
