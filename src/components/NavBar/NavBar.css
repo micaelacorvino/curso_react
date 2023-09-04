@@ -1,4 +1,32 @@
+.NavBar {
+  background-color: blueviolet; 
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+h3 {
+  margin: 0;
+  color: white; 
+}
+
+.Categories {
+  display: flex;
+  gap: 20px;
+}
+
+.Option {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.Option:hover {
+  color: white; 
+}
+
 .ActiveOption {
-    background-color: #333; 
-    color: #fff; 
-  }
+  color: blueviolet; 
+}

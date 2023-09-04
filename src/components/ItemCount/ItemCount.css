@@ -1,34 +1,42 @@
 .Counter {
-    /* Estilos para el contenedor principal */
-    background-color: #f0f0f0;
-    padding: 10px;
-    
-}
-
-.Controls {
-    /* Estilos para el contenedor de botones */
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  
+  .Controls {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.Button {
-    /* Estilos para los botones de incremento y decremento */
-    background-color: #282c34;
-    color: #fff;
+    margin-top: 20px; 
+  }
+  
+  
+  .Button {
+    background-color: #8926a1; 
+    color: #ffffff; 
     border: none;
-    padding: 5px 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    margin: 0 10px; 
     cursor: pointer;
-    align-items: center;
-    
-
-}
-
-.Number {
-    /* Estilos para el número de cantidad */
-    font-size: 24px;
+    transition: background-color 0.3s;
+  }
+  
+  .Button:hover {
+    background-color: #681c7b; 
+  }
+  
+ 
+  .Number {
+    font-size: 36px; 
+    color: #333; 
     margin: 20px;
-    justify-content: center;
-}
+  }
