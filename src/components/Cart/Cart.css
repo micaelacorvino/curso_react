@@ -1,0 +1,44 @@
+.Cart {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .CartItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  
+  .Button {
+    background-color: violet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .Button:hover {
+    background-color: darkviolet;
+  }
+  
+  
+  .Option {
+    color: violet;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .Option:hover {
+    color: darkviolet;
+  }
