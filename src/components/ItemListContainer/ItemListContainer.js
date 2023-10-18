@@ -1,9 +1,8 @@
 
 
 import { useState, useEffect } from 'react';
-//import { getProducts, getProductsByCategory } from '../../asyncMock';
-import ItemList from '../ItemList/ItemList';
 
+import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 
 import { getDocs, collection, query, where } from 'firebase/firestore';
@@ -20,8 +19,8 @@ const ItemListContainer = ({ greeting }) => {
     setLoading(true)
     
     const productsRef = categoryId 
-      ? collection(db, 'products')
-      : query(collection(db, 'products'), where('category', '==', categoryId))
+      ? query(collection(db, "products"), where("category", "==", categoryId))
+      :  collection(db, "products")
 
     getDocs(productsRef)
       .then(querySnapshot => {
@@ -39,19 +38,7 @@ const ItemListContainer = ({ greeting }) => {
       .finally(() => {
         setLoading(false)
       })
-    //const asyncFunc = categoryId ? getProductsByCategory : getProducts
-
-    /*asyncFunc(categoryId)
-      .then(result => {
-        setProducts(result);
-      })
-      .catch(error => {
-        console.error(error);
-      })
-      .finally(() => {
-        setLoading(false)
-      })*/
-      
+  
     }, [categoryId]);
 
     useEffect(() => {
